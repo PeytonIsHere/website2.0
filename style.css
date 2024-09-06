@@ -1,0 +1,156 @@
+body {
+    background-color: #1e222a;
+    color: #949ba7;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.headernav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 35px; /* Adjusted padding to move the navbar away from the edges */
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.logo {
+    text-decoration: none;
+    color: #949ba7;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.logo:hover {
+    background-color: rgb(28, 31, 39);
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: #949ba7;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-color: rgb(28, 31, 39);
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(28, 31, 39); /* Set background color to match hover state */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 0; /* Align dropdown menu with the button */
+    padding: 0; /* Remove extra padding */
+    overflow: hidden; /* Prevents content from extending beyond the container */
+}
+
+.dropdown-content a {
+    color: #949ba7;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Prevent text from wrapping */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.dropdown-content a:hover {
+    background-color: #2a2e38; /* Slightly lighter background for hover effect */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.title {
+    text-align: center;
+    margin: 100px auto; /* Adjusted margin to center the title and add space from the top */
+    padding: 0 20px; /* Optional: Add some padding to ensure text doesn’t touch the edges */
+    box-sizing: border-box;
+}
+
+.title h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.title h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e222a;
+    color: #949ba7;
+    margin-top: 50px;
+}
+footer a {
+    color: #949ba7;
+    text-decoration: none;
+    margin: 0 10px;
+}
+footer a:hover {
+    color: #ffffff;
+}
+
+a {
+  color: #949ba7;
+}
+a:hover {
+  color: #ffffff;
+}
+
+.blog-link {
+    text-decoration: none; /* Remove underline from the entire box link */
+    color: inherit; /* Inherit color from parent styles */
+    display: block; /* Make the link behave like a block element */
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.blog-preview {
+    border: 2px solid transparent; /* Default border */
+    padding: 20px;
+    background-color: #2a2e38; /* Background color of the blog preview box */
+    transition: border-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.blog-preview h2 {
+    color: #ffffff; /* Color of the blog title */
+    margin: 0;
+}
+
+.blog-preview .author {
+    color: #949ba7; /* Font color of the author text */
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.blog-preview .description {
+    color: #c2c7cf; /* Font color of the description text */
+    margin-top: 10px;
+}
+
+.blog-link:hover .blog-preview {
+    border-color: #949ba7; /* Border color when hovered over */
+}
+
